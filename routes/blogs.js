@@ -38,10 +38,11 @@ router.post('/', async(req,res) => {
     }
 })
 
-router.patch('/:id',async(req,res)=> {
+router.put('/:id',async(req,res)=> {
     try{
         const blog = await Blog.findById(req.params.id) 
         blog.title = req.body.title
+        blog.author = req.body.author
         const a1 = await blog.save()
         res.json(a1)   
     }catch(err){

@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const url = 'mongodb+srv://loliklolik449:Bexmeen1111@cluster0.5sg9eqi.mongodb.net/blogDB'
+const url = 'mongodb://localhost:27017/'
 
 const app = express()
 
